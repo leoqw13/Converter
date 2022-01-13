@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Temperature converter</title>
+    <link rel='stylesheet'  href='style.css'>
+    <script src='converter.js'></script>
+</head>
+
+<body>
+    <h1>Fahrenheit to Celsius Converter</h1>
+    <img class="image" src="temperature-ico.png" alt="Temperature icon" />
+<p>To convert, please enter a number in the field below.</p>
+<form>
+    <label>Enter the temperature in Fahrenheit:</label>
+    <input type="text" id="F" size="20" value="0">
+    <input type="button" value="convert to ºC" onclick="convertToC()">
+</form>
+<div id="Result">The answer will be shown here</div>
+</body>
+</html>
