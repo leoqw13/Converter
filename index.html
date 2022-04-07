@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Temperature converter</title>
-    <link rel='stylesheet'  href='style.css'>
-    <script src='converter.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Fahrenheit to Celsius Converter</h1>
-    <img class="image" src="temperature-ico.png" alt="Temperature icon" />
-<p>To convert, please enter a number in the field below.</p>
-<form>
-    <label>Enter the temperature in Fahrenheit:</label>
-    <input type="text" id="F" size="20" value="0">
-    <input type="button" value="convert to ºC" onclick="convertToC()">
-</form>
-<div id="Result">The answer will be shown here</div>
+
+    <main>
+        <header>
+            <h1>Temperature Converter</h1>
+            <img class="image" src="temperature-ico.png" alt="Temperature icon" />
+            <p>To convert, please enter a number in any of the fields below.</p>
+        </header>
+        <section class="inputs">
+            <label>Enter the temperature in Celcius:</label>
+            <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+          <br><br>
+          <label>Enter the temperature in Fahrenheit:</label> 
+          <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
+           <br><br>
+           <label>Enter the temperature in Kelvin:</label>
+            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
